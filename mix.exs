@@ -18,7 +18,9 @@ defmodule NKSip.Mixfile do
       :ssl, 
       :lager, 
       :nkpacket, 
-      :nkservice], mod: {:nksip_app, []}]
+      :nkservice], mod: {:nksip_app, []},
+      { :erl_opts, [parse_transform: "lager_transform"] }
+      ]
   end
 
   defp deps do
