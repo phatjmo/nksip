@@ -26,7 +26,7 @@ defmodule NKSip.Mixfile do
       {:cowboy, github: "extend/cowboy", branch: "master", override: true},
       {:gun, github: "ninenines/gun", ref: "427230d6f94f5b8a396fd504a73d73d1d65ab0a7", override: true},
       {:nkpacket, github: "phatjmo/nkpacket", override: true},
-      {:luerl, github: "rvirding/luerl", branch: "develop", override: true}
+      {:luerl, github: "rvirding/luerl", ref: "develop", override: true}
     ]
   end
 end
