@@ -3,13 +3,22 @@ defmodule NKSip.Mixfile do
 
   def project do
     [app: :nksip,
-     version: "0.0.1",
+     version: "0.5.0",
+     description: "NKSip Framework",
      language: :erlang,
      deps: deps]
   end
 
   def application do
-    [applications: [], mod: {:nksip, []}]
+    [applications: [
+      :kernel, 
+      :stdlib, 
+      :crypto, 
+      :sasl, 
+      :ssl, 
+      :lager, 
+      :nkpacket, 
+      :nkservice], mod: {:nksip_app, []}]
   end
 
   defp deps do
