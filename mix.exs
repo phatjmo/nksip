@@ -10,7 +10,9 @@ defmodule NKSip.Mixfile do
   end
 
   def application do
-    [applications: [
+    [
+    { :erl_opts, [parse_transform: "lager_transform"] }, 
+      applications: [
       :kernel, 
       :stdlib, 
       :crypto, 
@@ -18,9 +20,7 @@ defmodule NKSip.Mixfile do
       :ssl, 
       :lager, 
       :nkpacket, 
-      :nkservice], mod: {:nksip_app, []},
-      { :erl_opts, [parse_transform: "lager_transform"] }
-      ]
+      :nkservice], mod: {:nksip_app, []}]
   end
 
   defp deps do
