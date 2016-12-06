@@ -6,6 +6,9 @@ defmodule NKSip.Mixfile do
      version: "0.5.0",
      description: "NKSip Framework",
      language: :erlang,
+     compilers: [:erlang, :app],
+     erlc_options: [{:parse_transform, :lager_transform}],
+     erl_options: [{:parse_transform, :lager_transform}],
      deps: deps]
   end
 
