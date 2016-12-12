@@ -36,7 +36,7 @@ defmodule NKSip.Mixfile do
       {:eper, github: "massemanet/eper", tag: "0.97.6", override: true},
       {:meck, github: "basho/meck", tag: "0.8.2", override: true},
       {:nklib, github: "phatjmo/nklib", override: true},
-      {:ranch, github: "ninenines/ranch",  tag: "1.1.0", override: true},
+      {:ranch, github: "ninenines/ranch",  tag: "1.3.0", override: true},
       {:cowlib, github: "ninenines/cowlib", branch: "master", override: true},
       {:cowboy, github: "extend/cowboy", branch: "master", override: true},
       {:gun, github: "ninenines/gun", ref: "427230d6f94f5b8a396fd504a73d73d1d65ab0a7", override: true},
